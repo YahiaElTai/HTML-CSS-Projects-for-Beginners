@@ -1,0 +1,261 @@
+/*Global Style */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+/*Header Style*/
+header {
+  margin:0;
+  padding: 32px 0px;
+  color: #ffffff;
+  background-color: #35424a;
+  border-bottom:#e8491d 3px solid;
+}
+#acme {
+  color:#e8491d;
+}
+header h1 {
+  float:left;
+  font-size: 32px;
+  font-weight: bold;
+}
+header nav {
+  float: right;
+  padding-top: 10px;
+}
+li  {
+  display:inline;
+  padding-right: 25px;
+}
+li a {
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.current a{
+  color:#e8491d;
+}
+a:hover{
+  color:#e8491d;
+}
+
+/*ShowCase Area Style*/
+.showcase {
+  text-align: center;
+  color:#ffffff;
+  height: 400px;
+  background-image:url(../images/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.showcase h1 {
+  padding: 60px 0 20px 0;
+  font-size: 60px;
+}
+.showcase p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*Newsletter Area Style*/
+.newsletter {
+  padding: 32px 0;
+  background:#35424a;
+  color:#ffffff;
+}
+.newsletter p {
+  font-weight: bold;
+  font-size: 25px;
+  float: left;
+  width: 65%;
+}
+input{
+  width: 250px;
+  border: 0;
+  padding: 10px 0px;
+}
+button {
+  border: 0;
+  padding: 10px;
+  color:#ffffff;
+  background:#e8491d;
+}
+.boxes {
+  background:#f4f4f4;
+}
+.box {
+  height: 300px;
+  width: 30%;
+  float:left;
+  text-align: center;
+}
+.box img {
+  padding: 20px 0;
+}
+.box h3 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.box p {
+  padding: 10px 10px;
+}
+#main-col {
+  background:#f4f4f4;
+}
+
+/*About Page Style*/
+.about {
+  float:left;
+  width: 65%;
+  padding:20px 0px;
+}
+.about h2 {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.about p {
+  font-size: 17px;
+  padding: 10px 0px;
+  line-height: 23px;
+}
+#whatwedo {
+  margin-top: 15px;
+  padding: 25px 10px;
+  float: right;
+  width: 30%;
+  color: #ffffff;
+  background-color: #35424a;
+}
+#whatwedo h3 {
+  font-size: 20px;
+  padding: 15px 10px;
+}
+#whatwedo p {
+  line-height: 23px;
+  font-size: 17px;
+  padding: 10px 10px;
+}
+#whatwedo input {
+  width: 300px;
+  margin: 5px 0px;
+}
+#button {
+  width: 70px;
+  margin-top: 10px;
+}
+
+.services {
+  float:left;
+  width: 65%;
+  padding:20px 0px;
+}
+.services h2 {
+  font-size: 21px;
+  padding: 10px 0px;
+}
+.serv-list {
+  margin-bottom: 5px;
+  background:#e6e6e6;
+  padding: 20px;
+  border: 1px solid darkgray;
+}
+.serv-list h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+.serv-list p {
+  font-size: 17px;
+  padding: 7px 0px;
+  line-height: 24px;
+}
+
+/*Footer Style */
+footer {
+  padding: 27px;
+  text-align: center;
+  font-size: 16px;
+  background-color:#e8491d;
+  color: #ffffff;
+}
+
+/*Media Queries*/
+
+@media(max-width: 768px){
+  
+  header h1, nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  li {
+    padding-right: 10px;
+  }
+  .showcase h1 {
+    padding: 60px 0 20px 0;
+    font-size: 35px;
+  }
+  .showcase p {
+    padding: 10px;
+  }
+  .newsletter p {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 20px;
+    float: none;
+    width: 100%;
+  }
+  input{
+    width: 100%;
+    margin: 10px 0px;
+  }
+  button {
+    width: 100%;
+  }
+  .box {
+    height: 300px;
+    width: 100%;
+    float:none;
+    text-align: center;
+  }
+  .about {
+    float:none;
+    width: 100%;
+    padding:20px 0px;
+    text-align: center;
+  }
+  .about p {
+    font-size: 16px;
+    padding: 10px 10px;
+    line-height: 20px;
+  }
+  #whatwedo {
+    text-align: center;
+    margin-top: 15px;
+    padding: 25px 5px;
+    float: none;
+    width: 100%;
+  }
+  #whatwedo input {
+    width: 100%;
+    margin: 5px 0px;
+  }
+  #button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .services {
+    text-align: center;
+    float:none;
+    width: 100%;
+    padding:20px 0px;
+  }
+}

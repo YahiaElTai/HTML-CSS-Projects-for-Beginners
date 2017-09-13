@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="simple calculator">
+  <meta name="author" content="EL Tai Yahia">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="text" readonly id="display" name="result">
+    <button onclick="cls('')" class="gradientcolor" type="button" name="clean">C</button>
+    <button onclick="sign(display.value)" class="graybuttons" type="button" name="plus-mius">&#177;</button>
+    <button onclick="show('%')"  id="mod" class="graybuttons" type="button" name="modular">&#37;</button>
+    <button onclick="show('/')" id="div" class="graybuttons" type="button" name="divison">&#247;</button>
+    <button onclick="show(7)" class="whitecolor" type="button" name="7">7</button>
+    <button onclick="show(8)" class="whitecolor" type="button" name="8">8</button>
+    <button onclick="show(9)" class="whitecolor" type="button" name="9">9</button>
+    <button onclick="show('*')"  id="mul" class="graybuttons" type="button" name="multiplication">&#88;</button>
+    <button onclick="show(4)" class="whitecolor" type="button" name="4">4</button>
+    <button onclick="show(5)" class="whitecolor" type="button" name="5">5</button>
+    <button onclick="show(6)" class="whitecolor" type="button" name="6">6</button>
+    <button onclick="show('-')" id="subs" class="graybuttons" type="button" name="substraction">&#8722;</button>
+    <button onclick="show(1)" value="1" class="whitecolor" type="button" name="1">1</button>
+    <button onclick="show(2)" value="2" class="whitecolor" type="button" name="2">2</button>
+    <button onclick="show(3)" value="3" class="whitecolor" type="button" name="3">3</button>
+    <button onclick="show('+')" id="add" class="graybuttons" type="button" name="addition">&#43;</button>
+    <button onclick="show(0)" class="zero" type="button" name="0">&#48;</button>
+    <button  onclick="comma('.')" id="comma" class="graybuttons comma"  type="button" name="comma">&#46;</button>
+    <button  onclick="calcul()" id="equal" class="gradientback equal" type="button" name="equal">&#61;</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

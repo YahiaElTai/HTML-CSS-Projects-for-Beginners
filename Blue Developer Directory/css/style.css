@@ -1,0 +1,172 @@
+* {
+  margin: 0 auto 0 auto;
+}
+body {
+  background-color:#3D4D61;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #AB987A;
+  font-weight: bold;
+}
+.container {
+  width: 1024px;
+}
+header {
+  width: 960px;
+  padding:30px 0 30px 120px;
+  margin: 15px 0 30px 0;
+}
+.bluecolor {
+  color: #E0FFFF;
+}
+header h1 {
+  font-size: 40px;
+  float: left;
+}
+header h2 {
+  float: right;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  margin-top: 17px;
+}
+nav {
+  font-size: 20px;
+  padding: 17px;
+  background: rgba(255, 83, 61, 0.6);
+}
+nav ul {
+  margin-left: 137px;
+}
+nav li {
+  padding-right:40px;
+  display: inline-block;
+  color:#F5F5F5;
+}
+nav a {
+  color:#F5F5F5;
+}
+aside {
+  float: left;
+  width: 300px;
+}
+
+aside li {
+  list-style: none;
+  font-size: 17px;
+  line-height: 2em;
+}
+aside h3 {
+  padding:20px 0px 10px 0px;
+  color: #AB987A;
+  font-size: 25px;
+}
+input {
+  margin:5px 0px;
+}
+#displayname {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+  padding-right: 20px;
+}
+#showtext {
+  font-size: 15px;
+  padding: 10px 0px;
+}
+.slogan {
+  font-size: 70px;
+  font-family: 'Indie Flower', cursive;
+  text-align:center;
+  margin-top: 100px;
+}
+section {
+  padding: 20px;
+  font-size: 13px;
+  float: right;
+  width: 680px;
+}
+section h2 {
+  font-size: 25px;
+  padding-bottom: 15px;
+  color: #AB987A;
+}
+section h3 {
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px 0px;
+}
+.browse h3 {
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px 0px;
+  background: rgba(255, 83, 61, 0.6);
+}
+section p {
+  font-size: 16px;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+.dev-table {
+  width: 680px;
+  text-align: left;
+}
+.dev-table thead th {
+  font-size: 18px;
+  padding: 4px 0px;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+.dev-table tbody td {
+  padding: 3px 0px;
+  font-size: 15px;
+  border-bottom: 1px dashed white;
+}
+
+.col-contact {
+  padding: 20px;
+  font-size: 13px;
+  float: right;
+  width: 680px;
+}
+.contact-table {
+  text-align: left;
+  width: 680px;
+}
+.contact-table td {
+  padding: 5px 20px 5px 10px;
+  text-align: left;
+  display: inline-block;
+  font-size: 15px;
+}
+.col-contact h3 {
+  font-size: 25px;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+.col-contact p {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+label {
+  display: inline-block;
+  width: 150px;
+}
+footer {
+  text-align: center;
+  background:black;
+  margin-top: 20px;
+  padding: 15px 0px;
+}
+
+#map {
+  width:500px;
+  height:300px;
+  float:left;
+  color: black;
+}

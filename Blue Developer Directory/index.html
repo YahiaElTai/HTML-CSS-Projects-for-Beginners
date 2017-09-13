@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Find a developer</title>
+</head>
+<body>
+	<header>
+		<h1> <span class="bluecolor">Blue </span>Developer Directory</h1>
+		<h2> <span class="bluecolor">Find A Developer </span>NOW</h2>
+	</header>
+	<nav>
+		<ul >
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="browse.html">Browse Developers</a></li>
+			<li><a href="register.html">Register As A Developer</a></li>
+			<li><a href="contact.html">Contact US</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<video id="ad" width="600"  height="400" controls>
+			<source src="video/ad.mp4" type="video/MP4">
+				Please update your browser
+			</video>
+			<div>
+				<button onclick="playPause()">Play/Pause</button>
+				<button onclick="makeBig()">Big</button>
+				<button onclick="makeNormal()">Normal</button>
+			</div>
+			<p class="slogan">We live in the details.</p>
+		</div>
+		<script>
+		var myVideo = document.getElementById('ad');
+		function playPause() {
+			if (myVideo.paused) {
+				myVideo.play();
+			}	else {
+				myVideo.pause();
+			}
+		}
+		function makeBig() {
+			myVideo.setAttribute("width","800");
+		}
+		function makeNormal() {
+			myVideo.setAttribute("width","600");
+		}
+		</script>
+		<footer>
+			<p>Copyright Blue Developer Directory 2017</p>
+			<a style="color:white;" href="info.html">Info</a>
+		</footer>
+	</body>
+	</html>
