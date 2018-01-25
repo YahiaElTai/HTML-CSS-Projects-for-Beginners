@@ -1,0 +1,23 @@
+#reviews {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../images/reviews-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 315px;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Lato";
+	color: rgb(255, 255, 255);
+
+	.quote {
+		margin: 0;
+
+		footer {
+			margin-top: 18px;
+			font-size: 14px;
+		}
+	}
+}

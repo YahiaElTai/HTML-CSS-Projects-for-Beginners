@@ -1,0 +1,45 @@
+#features {
+	margin: 50px 0 70px 0;
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.feature {
+		text-align: center;
+
+		.fig-image {
+			margin: 0;
+		}
+
+		h2 {
+			display: inline-block;
+			margin: 5px 0 0 0;
+			padding-bottom: 7px;
+			font-size: 18px;
+			font-family: "Lato";
+			color: rgb(0, 0, 0);
+			font-weight: bold;
+			border-bottom: 1px solid #ff3333;
+		}
+
+		p {
+			font-family: "Lato";
+			color: rgb(0, 0, 0);
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#features {
+
+		.container {
+			display: flex;
+			width: 81%;
+			margin: 0 auto;
+		}
+	}
+
+
+}

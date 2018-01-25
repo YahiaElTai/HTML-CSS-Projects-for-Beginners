@@ -8,7 +8,7 @@ I bet you were looking for simple project ideas to get you a bit more comfortabl
 There are two methods for getting started with this repo.
 
 #### Familiar with Git?
-follow instructions:  
+follow instructions:
 
 ```
 > git clone https://github.com/YahiaElTai/ProjectsIdeasForBeginners.git
@@ -33,10 +33,12 @@ Pig Game http://resonant-lake.surge.sh/
 
 ScrollPlace Bootstrap http://tense-father.surge.sh/
 
+Fudi (Flexbox and SASS) http://silent-root.surge.sh/
+
 #### Helpful suggestion
 
-i would recommend for you to just look at the finished websites and try to replicate each one of them without looking at the code, git it your best shot, 
+i would recommend for you to just look at the finished websites and try to replicate each one of them without looking at the code, git it your best shot,
 if you find any problems then take a quick glance at the code to see where it got kind of confusing.
 
-Feel free to costumize, add new stuff to these projects and basically do anything you want with them. 
+Feel free to costumize, add new stuff to these projects and basically do anything you want with them.
 

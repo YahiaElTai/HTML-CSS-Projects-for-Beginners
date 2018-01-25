@@ -1,0 +1,69 @@
+#cuisines {
+	font-family: "lato";
+
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 25px 0;
+		padding-top: 40px;
+
+		span {
+			padding-bottom: 5px;
+			border-bottom: 1px solid red;
+		}
+	}
+
+	.container {
+		margin-top: 50px;
+
+		.cuisine {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			color: #fff;
+			width: 100%;
+			height: 230px;
+
+			h3 {
+				margin: 0;
+				text-transform: uppercase;
+				font-size: 28px;
+				font-weight: bold;
+			}
+
+			p {
+				font-family: "Times New Roman";
+				color: rgba(255, 255, 255, 0.902);
+				font-weight: bold;
+				font-style: italic;
+				margin: 0;
+			}
+		}
+
+		@each $cuisine in american, chinese, french, indian, italian, mexican, pizza, seafood, steak, sushi {
+			.#{$cuisine} {
+				background-image: url('../images/#{$cuisine}.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#cuisines {
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+
+			.cuisine {
+				width: 20%;
+			}
+		}
+	}
+}
+
+

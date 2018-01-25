@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#header {
+  padding: 0;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 85vh; }
+  #header .container {
+    width: 90%;
+    margin: 0 auto;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+  #header .top-header {
+    display: flex;
+    justify-content: space-between; }
+    #header .top-header .logo {
+      margin: 0; }
+    #header .top-header .main-nav {
+      align-self: center; }
+    #header .top-header .main-nav ul {
+      display: flex;
+      list-style: none;
+      text-transform: uppercase; }
+      #header .top-header .main-nav ul li:nth-child(1) {
+        margin-right: 22px; }
+      #header .top-header .main-nav ul li a {
+        color: #fff;
+        text-decoration: none; }
+  #header .branding {
+    text-align: center; }
+    #header .branding h1 {
+      font-size: 25px;
+      font-family: "Times New Roman";
+      color: rgba(255, 255, 255, 0.702);
+      font-weight: bold;
+      font-style: italic; }
+      #header .branding h1 span {
+        font-style: normal;
+        display: block;
+        margin: 30px 0;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-family: "Lato";
+        color: #fff;
+        font-weight: bold; }
+    #header .branding .btn-cta {
+      padding: 8px 36px;
+      text-transform: uppercase;
+      border: 3px solid #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: "Lato";
+      color: #fff;
+      background-color: rgba(246, 150, 121, 0);
+      font-weight: bold;
+      text-align: center; }
+    #header .branding p {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Lato";
+      color: #fff;
+      margin: 33px 0 0 0; }
+      #header .branding p a {
+        color: #fff;
+        font-weight: bold; }
+
+@media screen and (min-width: 768px) {
+  #header {
+    height: 100vh; }
+    #header .container {
+      height: 81%;
+      width: 81%;
+      margin: 0 auto; }
+    #header .branding h1 span {
+      font-size: 75px; }
+    #header .branding .btn-cta {
+      padding: 18px 60px; } }
+@media screen and (min-width: 1024px) {
+  #header .container {
+    width: 87%;
+    margin: 0 auto; } }
+#footer {
+  font-family: "lato";
+  font-size: 18px;
+  text-align: center; }
+  #footer .container {
+    width: 100%; }
+
+@media screen and (min-width: 768px) {
+  #footer .container {
+    width: 81%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; } }
+#features {
+  margin: 50px 0 70px 0; }
+  #features .container {
+    width: 90%;
+    margin: 0 auto; }
+  #features .feature {
+    text-align: center; }
+    #features .feature .fig-image {
+      margin: 0; }
+    #features .feature h2 {
+      display: inline-block;
+      margin: 5px 0 0 0;
+      padding-bottom: 7px;
+      font-size: 18px;
+      font-family: "Lato";
+      color: black;
+      font-weight: bold;
+      border-bottom: 1px solid #ff3333; }
+    #features .feature p {
+      font-family: "Lato";
+      color: black; }
+
+@media screen and (min-width: 768px) {
+  #features .container {
+    display: flex;
+    width: 81%;
+    margin: 0 auto; } }
+#mobile-app {
+  font-family: "Lato";
+  padding: 30px 0 0 20px;
+  background-color: #f7f7f7; }
+  #mobile-app .content h2 {
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold; }
+    #mobile-app .content h2 span {
+      border-bottom: 1px solid #ff3333;
+      padding-bottom: 8px; }
+  #mobile-app .iphone {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  #mobile-app {
+    padding: 30px 0 0 0; }
+    #mobile-app .container {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around; }
+    #mobile-app .content {
+      flex-basis: calc(55% - 3em); }
+    #mobile-app .iphone {
+      flex-basis: calc(45% - 3em);
+      margin: 0;
+      order: -1;
+      display: block; }
+    #mobile-app .iphone img {
+      width: 100%;
+      height: 100%; } }
+#reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/reviews-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 315px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato";
+  color: white; }
+  #reviews .quote {
+    margin: 0; }
+    #reviews .quote footer {
+      margin-top: 18px;
+      font-size: 14px; }
+
+#cuisines {
+  font-family: "lato"; }
+  #cuisines h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+    padding-top: 40px; }
+    #cuisines h2 span {
+      padding-bottom: 5px;
+      border-bottom: 1px solid red; }
+  #cuisines .container {
+    margin-top: 50px; }
+    #cuisines .container .cuisine {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      width: 100%;
+      height: 230px; }
+      #cuisines .container .cuisine h3 {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: bold; }
+      #cuisines .container .cuisine p {
+        font-family: "Times New Roman";
+        color: rgba(255, 255, 255, 0.902);
+        font-weight: bold;
+        font-style: italic;
+        margin: 0; }
+    #cuisines .container .american {
+      background-image: url("../images/american.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .chinese {
+      background-image: url("../images/chinese.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .french {
+      background-image: url("../images/french.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .indian {
+      background-image: url("../images/indian.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .italian {
+      background-image: url("../images/italian.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .mexican {
+      background-image: url("../images/mexican.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .pizza {
+      background-image: url("../images/pizza.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .seafood {
+      background-image: url("../images/seafood.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .steak {
+      background-image: url("../images/steak.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    #cuisines .container .sushi {
+      background-image: url("../images/sushi.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+
+@media screen and (min-width: 768px) {
+  #cuisines .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    #cuisines .container .cuisine {
+      width: 20%; } }
+#statistics {
+  font-family: "lato";
+  background-color: #4a3949;
+  padding: 25px 0; }
+  #statistics .stat-data {
+    color: #fff;
+    text-align: center;
+    padding: 15px 0; }
+    #statistics .stat-data h3 {
+      margin: 0;
+      font-size: 36px; }
+      #statistics .stat-data h3 span {
+        font-size: 14px;
+        display: block; }
+
+@media screen and (min-width: 768px) {
+  #statistics {
+    border-bottom: 1px solid grey;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around; }
+    #statistics .stat-data {
+      color: #000; }
+      #statistics .stat-data h3 {
+        font-size: 34px; }
+        #statistics .stat-data h3 span {
+          font-size: 13px; } }
+
+/*# sourceMappingURL=style.css.map */

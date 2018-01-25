@@ -1,0 +1,43 @@
+#statistics {
+	font-family: "lato";
+	background-color: #4a3949;
+	padding: 25px 0;
+
+	.stat-data {
+		color: #fff;
+		text-align: center;
+		padding: 15px 0;
+
+		h3 {
+			margin: 0;
+			font-size: 36px;
+
+			span {
+				font-size: 14px;
+				display: block;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	#statistics {
+		border-bottom: 1px solid grey;
+		background-color: #fff;
+		display: flex;
+		justify-content: space-around;
+
+		.stat-data {
+			color: #000;
+
+			h3 {
+				font-size: 34px;
+
+				span {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
