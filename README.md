@@ -2,12 +2,12 @@
 
 I bet you were looking for simple project ideas to get you a bit more comfortable with front-end technologies, well here you go , Enjoy!
 
-
 ### Getting Started
 
 There are two methods for getting started with this repo.
 
 #### Familiar with Git?
+
 follow instructions:
 
 ```
@@ -17,23 +17,19 @@ follow instructions:
 
 #### Not Familiar with Git?
 
-Click the green clone or download button   and download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory.
+Click the green clone or download button and download the .zip file. Extract the contents of the zip file, then open your terminal, change to the project directory.
 
 #### Demo finished projects
 
-Acme Web Design    http://daily-measure.surge.sh/
+1. Acme Web Design http://yellow-wish.surge.sh/
 
-Blue Developer Directory https://bluedeveloperdirectory.000webhostapp.com/
+2. Budgety http://simple-honey.surge.sh/
 
-Budgety http://bright-ball.surge.sh/
+3. Calculator http://tenuous-head.surge.sh/
 
-Calculator http://previous-chain.surge.sh/
+4. Pig Game http://ruthless-angle.surge.sh/
 
-Pig Game http://resonant-lake.surge.sh/
-
-ScrollPlace Bootstrap http://tense-father.surge.sh/
-
-Fudi (Flexbox and SASS) http://silent-root.surge.sh/
+5. Fudi (Flexbox and SASS) http://gusty-bushes.surge.sh/
 
 #### Helpful suggestion
 
@@ -41,4 +37,3 @@ i would recommend for you to just look at the finished websites and try to repli
 if you find any problems then take a quick glance at the code to see where it got kind of confusing.
 
 Feel free to costumize, add new stuff to these projects and basically do anything you want with them.
-
