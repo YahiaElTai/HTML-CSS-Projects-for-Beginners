@@ -33,7 +33,7 @@ Click the green clone or download button and download the .zip file. Extract the
 
 #### Helpful suggestion
 
-i would recommend for you to just look at the finished websites and try to replicate each one of them without looking at the code, git it your best shot,
+i would recommend for you to just look at the finished websites and try to replicate each one of them without looking at the code, give it your best shot,
 if you find any problems then take a quick glance at the code to see where it got kind of confusing.
 
-Feel free to costumize, add new stuff to these projects and basically do anything you want with them.
+Feel free to customize, add new stuff to these projects and basically do anything you want with them.
