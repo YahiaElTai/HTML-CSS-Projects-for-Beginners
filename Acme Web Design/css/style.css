@@ -106,6 +106,7 @@ button {
 }
 .box p {
   padding: 10px 10px;
+  font-family: sans-serif;
 }
 #main-col {
   background:#f4f4f4;
@@ -180,6 +181,7 @@ button {
 
 /*Footer Style */
 footer {
+  margin-top: 30%;
   padding: 27px;
   text-align: center;
   font-size: 16px;
