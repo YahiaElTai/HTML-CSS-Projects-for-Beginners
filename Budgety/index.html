@@ -14,8 +14,13 @@
                 <div class="budget__title">
                     Available Budget in <span class="budget__title--month">%Month%</span>:
                 </div>
-                
-                <div class="budget__value">+ 2,345.64</div>
+                <div style="text-align: center; font-size: 30px;">
+                    <p id="symbol">
+                        
+                    </p>
+                </div>
+                <div class="budget__value">+ 2,345.64
+                </div>
                 
                 <div class="budget__income clearfix">
                     <div class="budget__income--text">Income</div>
@@ -49,8 +54,19 @@
                     <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
                 </div>
             </div>
+            <div style="margin: auto; text-align: center;">
+
+                <select name="currency" id="currency" placeholder="Value" onchange="showResult()">
+                    <option value="" disabled selected>Choose a Currency</option>
+                    <option value="$">$ (US Dollar)</option>
+                    <option value="₹">₹ (Indian Rupee)</option>
+                    <option value="£">£ (British Pounds)</option>
+                  </select>
+
+            </div>
             
             <div class="container clearfix">
+                
                 <div class="income">
                     <h2 class="icome__title">Income</h2>
                     
@@ -118,7 +134,16 @@
             
             
         </div>
-        
+
+        <script>
+
+            var replace = document.getElementById('currency')
+
+            document.getElementById('symbol').innerHTML = ""
+            function showResult(){
+                document.getElementById('symbol').innerHTML = "Currency: "+replace.value
+            }
+        </script>
         <script src="app.js"></script>
     </body>
 </html>
