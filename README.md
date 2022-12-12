@@ -1,5 +1,5 @@
 # ProjectsIdeasForBeginners
-
+Hey
 I bet you were looking for simple project ideas to get you a bit more comfortable with front-end technologies, well here you go , Enjoy!
 
 ### Getting Started
