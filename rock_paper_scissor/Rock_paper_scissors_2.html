@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+
+            rock paper scissors
+
+        </title>
+
+        <style>
+
+            body {
+                background: url(./rock2.png) no-repeat;
+                background-size: cover;
+                background-position: top;
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .title{
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .move-icon {
+                height: 50px;
+            }
+
+            .move-button {
+                background-color: transparent;
+                border: 3px solid white;
+                height: 120px;
+                width: 120px;
+                border-radius: 60px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            .result {
+                font-size: 25px;
+                font-weight: bold;
+                margin-top: 50px;
+
+            }
+
+            .score {
+                margin-top: 60px;
+                font-size: 24px;
+            }
+
+            .reset-score-button {
+                background-color: beige;
+                border: none;
+                color: blue;
+                font-size: 22px;
+                padding:10px 20px;
+                cursor: pointer;
+                box-shadow: 0px 1px 7px rgba(0,0,0,0.25);
+                border-radius: 5px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .box {
+                position: absolute;
+                box-shadow: 0px 1px 7px rgba(0,0,0,0.25);
+                top: 50px;
+                left: 35%;
+                padding: 20px 40px ;
+                background-color: rgba(0,0,0,0.20);
+                border-radius: 8px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="box">
+
+            <p class="title">
+
+                Rock Paper Scissors
+    
+            </p>
+    
+    
+            <button onclick="
+                playGame('Rock');
+                " class="move-button">
+    
+                <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png">
+    
+            </button>
+    
+            
+            <button onclick="
+                playGame('Paper');     
+                " class="move-button">
+    
+                <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png">
+                
+            </button>
+    
+            
+            <button onclick="
+                playGame('Scissors');
+                " class="move-button">
+    
+                <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png">
+                
+            </button>
+            <p class="js-result result"> </p>
+    
+            <p class="js-moves"></p>
+    
+            <p class="js-score score"></p>
+    
+            <button onclick="
+                    reset()
+                    " class="reset-score-button">
+    
+                Reset score
+    
+            </button>
+
+        </div>
+
+
+        <script>
+
+            let score = JSON.parse(localStorage.getItem('score')) || {
+                wins: 0,
+                losses: 0,
+                ties: 0
+                };
+
+            
+            updateScoreElement();
+
+            function playGame(playerMove) {
+                const computerMove = pickComputerMove() ;
+                
+                let result = '';
+
+                if (playerMove === 'Scissors'){
+
+                    if(computerMove === 'Rock') {
+                        result = 'You loose';
+                    } else if (computerMove === 'Paper'){
+                        result = 'You win';
+                    } else if (computerMove === 'Scissors'){
+                        result = 'Tie';
+                    }
+                    
+                } else if (playerMove === 'Paper') {
+                    
+                    if(computerMove === 'Rock') {
+                        result = 'You win';
+                    } else if (computerMove === 'Paper'){
+                        result = 'Tie';
+                    } else if (computerMove === 'Scissors'){
+                        result = 'You loose';
+                    }
+
+                } else {
+
+                    if(computerMove === 'Rock') {
+                        result = 'Tie';
+                    } else if (computerMove === 'Paper'){
+                        result = 'You loose';
+                    } else if (computerMove === 'Scissors'){
+                        result = 'You win';
+                    }
+
+                }
+
+                if (result === 'You win') {
+                    score.wins+=1;
+                } else if (result === 'You loose') {
+                    score.losses+=1;
+                } else if(result === 'Tie') {
+                    score.ties+=1;
+                }
+
+                localStorage.setItem('score',JSON.stringify(score)) ;
+
+                updateScoreElement();
+
+                document.querySelector('.js-result').innerHTML = result;
+
+                document.querySelector('.js-moves').innerHTML = 
+                    `You
+                    <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/${playerMove.toLowerCase()}-emoji.png">
+                    <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/${computerMove.toLowerCase()}-emoji.png"> 
+                    Computer`;
+
+            };
+
+
+            function pickComputerMove() {
+
+                const randomNumber = Math.random();
+ 
+                let computerMove  = '';
+
+                if (randomNumber < 1/3) {
+                    computerMove = 'Rock';
+                } else if (randomNumber >= 1/3 && randomNumber < 2/3){
+                    computerMove = 'Paper';
+                } else {
+                    computerMove = 'Scissors';
+                }
+
+                return computerMove;
+
+            };
+
+            function reset() {
+                score.wins = 0;
+                score.losses = 0;
+                score.ties = 0;
+                localStorage.removeItem('score');
+                updateScoreElement();
+            };
+
+            function updateScoreElement() {
+                document.querySelector('.js-score')
+                .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+            };
+            
+            
+        </script>
+
+    </body>
+
+</html>
